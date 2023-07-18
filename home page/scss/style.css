@@ -84,6 +84,7 @@ a {
   padding-bottom: 23px;
 }
 .intro__btn {
+  background: transparent;
   display: inline-block;
   color: #FFFFFF;
   font-family: "Open Sans", sans-serif;
@@ -92,6 +93,10 @@ a {
   text-transform: uppercase;
   padding: 20px 100px;
   border: 1px solid #FFF;
+}
+.intro__btn:hover {
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 .main {
@@ -268,6 +273,10 @@ a {
   text-transform: uppercase;
   padding: 18px 9%;
   border: 1px solid #000;
+}
+.footer__btn:hover {
+  background-color: #000000;
+  color: #FFFFFF;
 }
 .footer__block2 {
   font-family: "Open Sans", sans-serif;

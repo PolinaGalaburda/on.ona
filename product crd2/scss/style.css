@@ -1,0 +1,357 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 56px;
+}
+.header__block {
+  display: flex;
+  align-items: center;
+}
+.header__logo-p {
+  font-family: "Cormorant", serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+.header__nav_left {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.header__list {
+  list-style: none;
+  display: flex;
+}
+.header__list_left {
+  opacity: 0.5;
+  gap: 26.45px;
+}
+.header__list_right {
+  gap: 16px;
+}
+.header__a {
+  color: #000;
+}
+main {
+  font-family: "Open Sans", sans-serif;
+}
+
+.card__way {
+  font-size: 14px;
+  background: #EFEDEA;
+  padding: 32px 0 32px 56px;
+}
+.card__way-items {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  margin: 0;
+}
+.card__item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.card__item_home:hover {
+  text-decoration: underline;
+}
+.card__item_pajama:hover {
+  text-decoration: underline;
+}
+.card__block {
+  box-sizing: border-box;
+  display: flex;
+}
+.card__imgs {
+  box-sizing: border-box;
+  background: url("../imgs/card img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 58.33%;
+}
+.card__bar {
+  box-sizing: border-box;
+  width: 41.67%;
+}
+.card__options {
+  background: #EFEDEA;
+  padding-top: 41px;
+  padding-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__title {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.card__article {
+  font-size: 12px;
+  opacity: 0.5;
+  padding-bottom: 24px;
+}
+.card__description {
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 307px;
+  text-align: center;
+  padding-bottom: 28.8%;
+}
+.card__price {
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+.card__sizes {
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  gap: 36px;
+  padding-bottom: 22px;
+}
+.card__size-input {
+  display: none;
+}
+.card__size-label {
+  opacity: 0.5;
+}
+.card__color {
+  height: 25px;
+  margin-bottom: 9%;
+}
+.card__color-input {
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 25px;
+  width: 25px;
+  background-color: #51B56D;
+}
+.card__btns {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-left: 25.3%;
+}
+.card__btn-buy {
+  align-self: flex-start;
+  border: 1px solid #000000;
+  padding: 20px 100px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 400;
+}
+.card__btn-buy:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.card__info {
+  padding-top: 51px;
+  padding-bottom: 96px;
+}
+.card__info-block {
+  padding-left: 65px;
+  padding-right: 36px;
+}
+.card__info-description {
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 18px;
+}
+.card__info-title {
+  font-size: 20px;
+  font-weight: 300;
+  opacity: 0.6999999881;
+}
+.card__info-sizes {
+  padding-top: 24px;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+.card__info-size-block {
+  font-size: 16px;
+  font-weight: 400;
+}
+.card__info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  opacity: 0.6999999881;
+}
+.card__info-para {
+  padding-bottom: 24px;
+}
+.card__info-btn {
+  padding-left: 25.3%;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__size-input:checked + .card__size-label {
+  opacity: 1;
+}
+
+.card__color-input:checked {
+  border: 1px solid #000000;
+}
+
+.similar {
+  background: #EFEDEA;
+  padding: 96px 56px;
+}
+.similar__headline {
+  text-align: center;
+}
+.similar__cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  padding-top: 56px;
+  gap: 24px;
+}
+.similar__card {
+  background-color: #FFFFFF;
+  width: 427px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+.similar__img {
+  transition: transform 0.3s ease-in-out;
+}
+.similar__img:hover {
+  transform: scale(0.9);
+}
+.similar__card-data {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 39px 24px 39px;
+}
+.similar__card-name {
+  margin-bottom: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+.similar__card-price {
+  font-size: 16px;
+  font-weight: 400;
+}
+.similar__card-btn-bar {
+  display: flex;
+  gap: 27px;
+  align-items: center;
+}
+
+.footer__block1 {
+  padding: 6.6% 11.6%;
+  border-bottom: 1px solid #000;
+}
+.footer__block1-title {
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.footer__form {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.footer__label {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.5;
+  max-width: 267px;
+  padding-right: 10px;
+}
+.footer__input {
+  box-sizing: border-box;
+  height: 57px;
+  padding: 0;
+  padding-left: 14px;
+  margin: 0;
+  border: 1px solid #000;
+  width: 40%;
+  opacity: 0.5;
+}
+.footer__btn {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 18px 9%;
+  border: 1px solid #000;
+}
+.footer__btn:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.footer__block2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 6.6% 11.6%;
+}
+.footer__nav {
+  display: flex;
+  gap: 6%;
+}
+.footer__list-title {
+  font-weight: 300;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+  opacity: 0.5;
+  margin-top: 16px;
+}
+.footer__item {
+  margin-bottom: 16px;
+}
+.footer__item_phone {
+  display: flex;
+  gap: 40px;
+}
+.footer__item_schedule {
+  display: flex;
+  gap: 36px;
+}
+.footer__networks {
+  margin-top: 12.2%;
+  display: flex;
+  gap: 32px;
+}

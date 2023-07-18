@@ -492,6 +492,10 @@ a {
   padding: 18px 9%;
   border: 1px solid #000;
 }
+.footer__btn:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
 .footer__block2 {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;

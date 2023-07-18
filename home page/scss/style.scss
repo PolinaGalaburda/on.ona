@@ -111,6 +111,7 @@ a {
 
 
    &__btn {
+      background: transparent;
       display: inline-block;
       color: #FFFFFF;
       font-family: 'Open Sans', sans-serif;
@@ -119,6 +120,11 @@ a {
       text-transform: uppercase;
       padding: 20px 100px;
       border: 1px solid #FFF;
+
+      &:hover {
+         color: #000000;
+         border: 1px solid #000000;
+      }
    }
 }
 
@@ -331,6 +337,11 @@ a {
       text-transform: uppercase;
       padding: 18px 9%;
       border: 1px solid #000;
+
+      &:hover {
+         background-color: #000000;
+         color: #FFFFFF;
+      }
    }
 
    &__block2 {

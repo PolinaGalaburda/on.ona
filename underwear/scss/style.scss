@@ -646,6 +646,11 @@ a {
       text-transform: uppercase;
       padding: 18px 9%;
       border: 1px solid #000;
+
+      &:hover {
+         background-color: #000000;
+         color: #FFFFFF;
+      }
    }
 
    &__block2 {
