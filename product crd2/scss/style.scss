@@ -206,6 +206,7 @@ main {
       padding-left: 25.30%;
    }
 
+
    &__btn-buy {
       align-self: flex-start;
       border: 1px solid #000000;
@@ -296,13 +297,21 @@ main {
    &__title {}
 
    &__cards {
-      width: 100%;
       display: flex;
-      justify-content: space-between;
       overflow: auto;
       scroll-snap-type: x mandatory;
       padding-top: 56px;
       gap: 24px;
+
+      &::-webkit-scrollbar {
+         width: 0.5em;
+         background-color: #EFEDEA;
+         height: 1px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+         background-color: transparent;
+      }
    }
 
    &__card {

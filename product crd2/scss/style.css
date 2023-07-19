@@ -230,13 +230,19 @@ main {
   text-align: center;
 }
 .similar__cards {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   overflow: auto;
   scroll-snap-type: x mandatory;
   padding-top: 56px;
   gap: 24px;
+}
+.similar__cards::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #EFEDEA;
+  height: 1px;
+}
+.similar__cards::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 .similar__card {
   background-color: #FFFFFF;
