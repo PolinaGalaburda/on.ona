@@ -152,15 +152,19 @@ a {
       overflow: auto;
       scroll-snap-type: x mandatory;
       gap: 24px;
+      position: relative;
 
       &::-webkit-scrollbar {
-         width: 0.5em;
-         background-color: #EFEDEA;
-         height: 1px;
+         position: absolute;
+         background-color: #FFFFFF;
+         opacity: 80%;
+         height: 3px;
+         bottom: 32px;
       }
 
       &::-webkit-scrollbar-thumb {
-         background-color: transparent;
+         background-color: #FFFFFF;
+         opacity: 50%;
       }
    }
 

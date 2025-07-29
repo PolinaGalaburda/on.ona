@@ -120,14 +120,18 @@ a {
   overflow: auto;
   scroll-snap-type: x mandatory;
   gap: 24px;
+  position: relative;
 }
 .main__scroll::-webkit-scrollbar {
-  width: 0.5em;
-  background-color: #EFEDEA;
-  height: 1px;
+  position: absolute;
+  background-color: #FFFFFF;
+  opacity: 80%;
+  height: 3px;
+  bottom: 32px;
 }
 .main__scroll::-webkit-scrollbar-thumb {
-  background-color: transparent;
+  background-color: #FFFFFF;
+  opacity: 50%;
 }
 .main__scroll-a {
   color: #000000;
